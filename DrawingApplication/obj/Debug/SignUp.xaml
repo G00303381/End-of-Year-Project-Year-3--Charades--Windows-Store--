@@ -37,5 +37,18 @@
             </Grid>
         </StackPanel>
     </Grid>
+    <Page.BottomAppBar>
+        <AppBar x:Name="bottombar" Padding="10,0,10,0">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                <Button x:ConnectionId='9' x:Name="backButton" Margin="10,23,10,0" Command="{Binding NavigationHelper.GoBackCommand, ElementName=pageRoot}"
+                        Style="{StaticResource NavigationBackButtonNormalStyle}"
+                        VerticalAlignment="Top"
+                        AutomationProperties.Name="Back"
+                        AutomationProperties.AutomationId="BackButton"
+                        AutomationProperties.ItemType="Navigation Button"                         />
+            </StackPanel>
+        </AppBar>
+    </Page.BottomAppBar>
+
 </Page>
 

@@ -7,7 +7,7 @@
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>371c012a-c4eb-4010-bf78-35d926746c6d</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\obj\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Dan\Desktop\Charades %28Windows Store%29\DrawingApplication\obj\Debug\</IntermediateOutputPath>
     <RegisteredManifestChecksum>C2174340D1265F1DD8E909000E0E7DC008B44B5F21BA5E7EB843C7D5C328CCD6</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>371c012a-c4eb-4010-bf78-35d926746c6d_1.0.0.0_neutral__m2mhzkw71ghyc</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>371c012a-c4eb-4010-bf78-35d926746c6d_m2mhzkw71ghyc!App</RegisteredUserModeAppID>
@@ -17,72 +17,68 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Dan\Desktop\Charades %28Windows Store%29\DrawingApplication\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-04-23T05:45:56.381</Modified>
+      <Modified>2015-04-23T08:05:29.157</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\bin\Debug\DrawingApplication.exe">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\Charades %28Windows Store%29\DrawingApplication\bin\Debug\DrawingApplication.exe">
       <PackagePath>DrawingApplication.exe</PackagePath>
-      <Modified>2015-04-23T05:45:52.213</Modified>
+      <Modified>2015-04-23T08:15:39.652</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\Charades %28Windows Store%29\DrawingApplication\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2013-07-23T06:01:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\Charades %28Windows Store%29\DrawingApplication\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2013-07-23T06:01:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\Charades %28Windows Store%29\DrawingApplication\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2013-07-23T06:01:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\Charades %28Windows Store%29\DrawingApplication\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2013-07-23T06:01:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\Charades %28Windows Store%29\DrawingApplication\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
       <Modified>2015-04-22T10:39:13.235</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\bin\Debug\BasicPage1.xbf">
-      <PackagePath>BasicPage1.xbf</PackagePath>
-      <Modified>2015-04-23T03:10:01.869</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\bin\Debug\Drawing.xbf">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\Charades %28Windows Store%29\DrawingApplication\bin\Debug\Drawing.xbf">
       <PackagePath>Drawing.xbf</PackagePath>
-      <Modified>2015-04-23T05:45:50.620</Modified>
+      <Modified>2015-04-23T08:05:24.411</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\bin\Debug\FreeDraw.xbf">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\Charades %28Windows Store%29\DrawingApplication\bin\Debug\FreeDraw.xbf">
       <PackagePath>FreeDraw.xbf</PackagePath>
-      <Modified>2015-04-23T05:45:50.623</Modified>
+      <Modified>2015-04-23T08:15:38.307</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\bin\Debug\GamePage.xbf">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\Charades %28Windows Store%29\DrawingApplication\bin\Debug\GamePage.xbf">
       <PackagePath>GamePage.xbf</PackagePath>
-      <Modified>2015-04-23T05:45:50.626</Modified>
+      <Modified>2015-04-23T08:05:24.412</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\bin\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\Charades %28Windows Store%29\DrawingApplication\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
       <Modified>2015-04-23T05:45:50.628</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\bin\Debug\SignUp.xbf">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\Charades %28Windows Store%29\DrawingApplication\bin\Debug\SignUp.xbf">
       <PackagePath>SignUp.xbf</PackagePath>
-      <Modified>2015-04-23T05:45:50.629</Modified>
+      <Modified>2015-04-23T08:05:24.413</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\bin\Debug\DrawingApplication.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\Charades %28Windows Store%29\DrawingApplication\bin\Debug\DrawingApplication.xr.xml">
       <PackagePath>DrawingApplication.xr.xml</PackagePath>
-      <Modified>2015-04-23T05:45:50.380</Modified>
+      <Modified>2015-04-23T08:05:24.207</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\Charades %28Windows Store%29\DrawingApplication\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-04-23T05:45:54.893</Modified>
+      <Modified>2015-04-23T08:05:27.859</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

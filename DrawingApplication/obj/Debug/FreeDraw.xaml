@@ -21,27 +21,27 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Canvas Name="CanvasMain" Background="White" Margin="0,0,0,0" >
-            <TextBlock Height="68" Margin="625,22,539,678" Name="textBlock1" Text="Time Left: 120" FontSize="24" Width="202" Foreground="Black" FontWeight="Bold" />
+            <!--<TextBlock Height="68" Margin="625,22,539,678" Name="textBlock1" Text="Time Left: 120" FontSize="24" Width="202" Foreground="Black" FontWeight="Bold" />-->
         </Canvas>
     </Grid>
 
     <Page.BottomAppBar>
         <AppBar x:Name="bottombar" Padding="10,0,10,0">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
-                <Button x:Name="backButton" Margin="10,23,10,0" Command="{Binding NavigationHelper.GoBackCommand, ElementName=pageRoot}"
+                <Button x:ConnectionId='1' x:Name="backButton" Margin="10,23,10,0" Command="{Binding NavigationHelper.GoBackCommand, ElementName=pageRoot}"
                         Style="{StaticResource NavigationBackButtonNormalStyle}"
                         VerticalAlignment="Top"
                         AutomationProperties.Name="Back"
                         AutomationProperties.AutomationId="BackButton"
-                        AutomationProperties.ItemType="Navigation Button"/>
+                        AutomationProperties.ItemType="Navigation Button"                         />
 
-                <Button x:ConnectionId='1' x:Name="penbtn" Content="&#x270E;" Style="{StaticResource CanvasMode}" ToolTipService.ToolTip="Pen"                      />
-                <Button x:ConnectionId='2' x:Name="linebtn" Content="&#x2571;" Style="{StaticResource CanvasMode}" ToolTipService.ToolTip="Line"                       />
-                <Button x:ConnectionId='3' x:Name="circlebtn" Content="&#x25EF;" Style="{StaticResource CanvasMode}" ToolTipService.ToolTip="Circle"                         />
-                <Button x:ConnectionId='4' x:Name="rectbtn" Content="&#x25AD;" Style="{StaticResource CanvasMode}" ToolTipService.ToolTip="Rectangle"                       />
-                <Button x:ConnectionId='5' x:Name="erasebtn" Content="&#x2205;" Style="{StaticResource CanvasMode}" ToolTipService.ToolTip="Eraser"                        />
+                <Button x:ConnectionId='2' x:Name="penbtn" Content="&#x270E;" Style="{StaticResource CanvasMode}" ToolTipService.ToolTip="Pen"                      />
+                <Button x:ConnectionId='3' x:Name="linebtn" Content="&#x2571;" Style="{StaticResource CanvasMode}" ToolTipService.ToolTip="Line"                       />
+                <Button x:ConnectionId='4' x:Name="circlebtn" Content="&#x25EF;" Style="{StaticResource CanvasMode}" ToolTipService.ToolTip="Circle"                         />
+                <Button x:ConnectionId='5' x:Name="rectbtn" Content="&#x25AD;" Style="{StaticResource CanvasMode}" ToolTipService.ToolTip="Rectangle"                       />
+                <Button x:ConnectionId='6' x:Name="erasebtn" Content="&#x2205;" Style="{StaticResource CanvasMode}" ToolTipService.ToolTip="Eraser"                        />
                 <TextBlock x:Name="tbPenColours" Text="Pen Colours : " FontSize="15" VerticalAlignment="Center" TextWrapping="Wrap" Padding="13,0,0,0" Margin="10,23,10,23" Grid.Column="3"></TextBlock>
-                <ComboBox x:ConnectionId='6' x:Name="cbChangeColour" Width="200" Height="40" ItemsSource="{Binding Colours}" SelectedItem="{Binding SelectedColourName, Mode=TwoWay}" Padding="8,0" Margin="0,23" Grid.Column="4"                                                   >
+                <ComboBox x:ConnectionId='7' x:Name="cbChangeColour" Width="200" Height="40" ItemsSource="{Binding Colours}" SelectedItem="{Binding SelectedColourName, Mode=TwoWay}" Padding="8,0" Margin="0,23" Grid.Column="4"                                                   >
                     <ComboBox.ItemTemplate>
                         <DataTemplate>
                             <Grid>
@@ -56,7 +56,7 @@
                     </ComboBox.ItemTemplate>
                 </ComboBox>
                 <TextBlock x:Name="tbFillColours" Text="Fill Colours : " FontSize="15" VerticalAlignment="Center" TextWrapping="Wrap" Padding="13,0,0,0" Margin="10,23,10,23" Grid.Column="5"></TextBlock>
-                <ComboBox x:ConnectionId='7' x:Name="cbFillColour" Width="200" Height="40" ItemsSource="{Binding Colours}" SelectedItem="{Binding SelectedColourName, Mode=TwoWay}" Padding="8,0" Margin="0,23" Grid.Column="6"                                                 >
+                <ComboBox x:ConnectionId='8' x:Name="cbFillColour" Width="200" Height="40" ItemsSource="{Binding Colours}" SelectedItem="{Binding SelectedColourName, Mode=TwoWay}" Padding="8,0" Margin="0,23" Grid.Column="6"                                                 >
                     <ComboBox.ItemTemplate>
                         <DataTemplate>
                             <Grid>
@@ -70,8 +70,8 @@
                         </DataTemplate>
                     </ComboBox.ItemTemplate>
                 </ComboBox>
-                <Button x:ConnectionId='8' x:Name="saveBtn" Content="Stop" Style="{StaticResource CanvasMode}" ToolTipService.ToolTip="Save"                       Margin="10,23,10,23" />
-                <Button x:ConnectionId='9' x:Name="clearBtn" Content="Clear" Style="{StaticResource CanvasMode}" ToolTipService.ToolTip="Save"                        Margin="10,23,10,23" />
+                <Button x:ConnectionId='9' x:Name="saveBtn" Content="Save" Style="{StaticResource CanvasMode}" ToolTipService.ToolTip="Save"                       Margin="10,23,10,23" />
+                <Button x:ConnectionId='10' x:Name="clearBtn" Content="Clear" Style="{StaticResource CanvasMode}" ToolTipService.ToolTip="Save"                        Margin="10,23,10,23" />
             </StackPanel>
         </AppBar>
     </Page.BottomAppBar>

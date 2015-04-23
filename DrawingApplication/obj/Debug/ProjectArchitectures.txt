@@ -1,1 +1,1 @@
-C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\DrawingApplication.csproj;neutral
+C:\Users\Dan\Desktop\Charades (Windows Store)\DrawingApplication\DrawingApplication.csproj;neutral

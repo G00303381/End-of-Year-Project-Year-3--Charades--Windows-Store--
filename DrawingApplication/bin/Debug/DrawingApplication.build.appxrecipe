@@ -7,59 +7,56 @@
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>371c012a-c4eb-4010-bf78-35d926746c6d</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\obj\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Dan\Desktop\Charades %28Windows Store%29\DrawingApplication\obj\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Dan\Desktop\Charades %28Windows Store%29\DrawingApplication\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\bin\Debug\DrawingApplication.exe">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\Charades %28Windows Store%29\DrawingApplication\bin\Debug\DrawingApplication.exe">
       <PackagePath>DrawingApplication.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\Charades %28Windows Store%29\DrawingApplication\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\Charades %28Windows Store%29\DrawingApplication\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\Charades %28Windows Store%29\DrawingApplication\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\Charades %28Windows Store%29\DrawingApplication\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\Charades %28Windows Store%29\DrawingApplication\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\bin\Debug\BasicPage1.xbf">
-      <PackagePath>BasicPage1.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\bin\Debug\Drawing.xbf">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\Charades %28Windows Store%29\DrawingApplication\bin\Debug\Drawing.xbf">
       <PackagePath>Drawing.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\bin\Debug\FreeDraw.xbf">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\Charades %28Windows Store%29\DrawingApplication\bin\Debug\FreeDraw.xbf">
       <PackagePath>FreeDraw.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\bin\Debug\GamePage.xbf">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\Charades %28Windows Store%29\DrawingApplication\bin\Debug\GamePage.xbf">
       <PackagePath>GamePage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\bin\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\Charades %28Windows Store%29\DrawingApplication\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\bin\Debug\SignUp.xbf">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\Charades %28Windows Store%29\DrawingApplication\bin\Debug\SignUp.xbf">
       <PackagePath>SignUp.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\bin\Debug\DrawingApplication.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\Charades %28Windows Store%29\DrawingApplication\bin\Debug\DrawingApplication.xr.xml">
       <PackagePath>DrawingApplication.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\Charades %28Windows Store%29\DrawingApplication\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
