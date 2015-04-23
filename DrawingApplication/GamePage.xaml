@@ -1,0 +1,65 @@
+﻿<Page
+    x:Class="DrawingApplication.GamePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DrawingApplication"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+
+    <Grid Background="Wheat">
+
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="406,0,417,0">
+            <Grid x:Name="ContentPanel" Grid.RowSpan="2">
+                <TextBlock Height="41" HorizontalAlignment="Left" Margin="12,87,0,0" Name="tbPlayer1" Text="TextBlock" VerticalAlignment="Top" FontSize="24" Width="177" Visibility="Collapsed" Foreground="#FF0E0000" FontWeight="Bold" />
+                <TextBlock Height="41" HorizontalAlignment="Left" Margin="12,134,0,0" Name="tbPlayer2" Text="TextBlock" VerticalAlignment="Top" FontSize="24" Width="177" Visibility="Collapsed" Foreground="#FF0E0000" FontWeight="Bold"/>
+                <TextBlock Height="41" HorizontalAlignment="Left" Margin="12,181,0,0" Name="tbPlayer3" Text="TextBlock" VerticalAlignment="Top" FontSize="24" Width="177" Visibility="Collapsed" Foreground="#FF0E0000" FontWeight="Bold"/>
+                <TextBlock Height="44" HorizontalAlignment="Left" Margin="12,330,0,0" Name="tbPlayer6" Text="TextBlock" VerticalAlignment="Top" FontSize="24" Width="177" Visibility="Collapsed" Foreground="#FF0E0000" FontWeight="Bold"/>
+                <TextBlock Height="41" HorizontalAlignment="Left" Margin="12,278,0,0" Name="tbPlayer5" Text="TextBlock" VerticalAlignment="Top" FontSize="24" Width="177" Visibility="Collapsed" Foreground="#FF0E0000" FontWeight="Bold"/>
+                <TextBlock Height="43" HorizontalAlignment="Left" Margin="12,228,0,0" Name="tbPlayer4" Text="TextBlock" VerticalAlignment="Top" FontSize="24" Width="177" Visibility="Collapsed" Foreground="#FF0E0000" FontWeight="Bold"/>
+                <TextBlock Height="46" HorizontalAlignment="Left" Margin="12,386,0,0" Name="tbPlayer7" Text="TextBlock" VerticalAlignment="Top" FontSize="24" Width="177" Visibility="Collapsed" Foreground="#FF0E0000" FontWeight="Bold"/>
+                <TextBlock FontSize="24" Height="30" HorizontalAlignment="Right" Margin="0,87,191,0" Name="tbScorePlayer1" Text="0" VerticalAlignment="Top" TextAlignment="Right" Visibility="Collapsed" Width="99" Foreground="#FF0E0000" FontWeight="Bold"/>
+                <TextBlock FontSize="24" Height="30" HorizontalAlignment="Left" Margin="190,134,0,0" Name="tbScorePlayer2" Text="0" VerticalAlignment="Top" TextAlignment="Right" Visibility="Collapsed" Width="99" Foreground="#FF0E0000" FontWeight="Bold"/>
+                <TextBlock FontSize="24" Height="30" HorizontalAlignment="Left" Margin="190,181,0,0" Name="tbScorePlayer3" Text="0" VerticalAlignment="Top" TextAlignment="Right" Visibility="Collapsed" Width="99" Foreground="#FF0E0000" FontWeight="Bold"/>
+                <TextBlock FontSize="24" Height="30" HorizontalAlignment="Left" Margin="192,330,0,0" Name="tbScorePlayer6" Text="0" VerticalAlignment="Top" TextAlignment="Right" Visibility="Collapsed" Width="99" Foreground="#FF0E0000" FontWeight="Bold"/>
+                <TextBlock FontSize="24" Height="30" HorizontalAlignment="Left" Margin="190,278,0,0" Name="tbScorePlayer5" Text="0" VerticalAlignment="Top" TextAlignment="Right" Visibility="Collapsed" Width="99" Foreground="#FF0E0000" FontWeight="Bold"/>
+                <TextBlock FontSize="24" Height="30" HorizontalAlignment="Left" Margin="192,228,0,0" Name="tbScorePlayer4" Text="0" VerticalAlignment="Top" TextAlignment="Right" Visibility="Collapsed" Width="99" Foreground="#FF0E0000" FontWeight="Bold"/>
+                <TextBlock FontSize="24" Height="30" HorizontalAlignment="Left" Margin="192,386,0,0" Name="tbScorePlayer7" Text="0" VerticalAlignment="Top" TextAlignment="Right" Visibility="Collapsed" Width="99" Foreground="#FF0E0000" FontWeight="Bold"/>
+                <TextBlock FontSize="32" Height="41" HorizontalAlignment="Left" Margin="12,35,0,0" Name="tbPlayer" Text="Player" VerticalAlignment="Top" Width="110" FontWeight="Bold" Foreground="#FF0E0000" />
+                <TextBlock FontSize="32" Height="41" HorizontalAlignment="Left" Margin="179,35,0,0" Name="tbScore" Text="Score" VerticalAlignment="Top" Width="110" TextAlignment="Right" FontWeight="Bold" Foreground="#FF0E0000"/>
+                <TextBlock FontSize="32" Height="41" HorizontalAlignment="Left" Margin="341,36,0,0" Name="tbGuess" Text="Guess?" TextAlignment="Right" VerticalAlignment="Top" Width="110" FontWeight="Bold" Foreground="#FF0E0000"/>
+                <Button Content="I guessed!" HorizontalAlignment="Left" Margin="311,71,0,0" Name="btnGuessPlayer1" Width="169" FontSize="20" Visibility="Collapsed" Click="btnGuessPlayer1_Click" Height="65" VerticalAlignment="Top" Background="#FF160E0E" BorderBrush="#FF7E7360" Foreground="#FF7D735F" />
+                <Button Content="I guessed!" FontSize="20" Height="65" HorizontalAlignment="Left" Margin="311,120,0,0" Name="btnGuessPlayer2" VerticalAlignment="Top" Width="169" Visibility="Collapsed" Click="btnGuessPlayer2_Click" Background="#FF160E0E" BorderBrush="#FF7E7360" Foreground="#FF7D735F"/>
+                <Button Content="I guessed!" FontSize="20" Height="65" HorizontalAlignment="Left" Margin="311,167,0,0" Name="btnGuessPlayer3" VerticalAlignment="Top" Width="169" Visibility="Collapsed" Click="btnGuessPlayer3_Click" Background="#FF160E0E" BorderBrush="#FF7E7360" Foreground="#FF7D735F"/>
+                <Button Content="I guessed!" FontSize="20" Height="65" HorizontalAlignment="Left" Margin="311,214,0,489" Name="btnGuessPlayer4" Width="169" Visibility="Collapsed" Click="btnGuessPlayer4_Click" Background="#FF160E0E" BorderBrush="#FF7E7360" Foreground="#FF7D735F"/>
+                <Button Content="I guessed!" FontSize="20" Height="65" HorizontalAlignment="Left" Margin="311,264,0,0" Name="btnGuessPlayer5" VerticalAlignment="Top" Width="169" Visibility="Collapsed" Click="btnGuessPlayer5_Click" Background="#FF160E0E" BorderBrush="#FF7E7360" Foreground="#FF7D735F"/>
+                <Button Content="I guessed!" FontSize="20" Height="65" HorizontalAlignment="Left" Margin="311,316,0,0" Name="btnGuessPlayer6" VerticalAlignment="Top" Width="169" Visibility="Collapsed" Click="btnGuessPlayer6_Click" Background="#FF160E0E" BorderBrush="#FF7E7360" Foreground="#FF7D735F"/>
+                <Button Content="I guessed!" FontSize="20" Height="65" HorizontalAlignment="Left" Margin="311,372,0,0" Name="btnGuessPlayer7" VerticalAlignment="Top" Width="169" Visibility="Collapsed" Click="btnGuessPlayer7_Click" Background="#FF160E0E" BorderBrush="#FF7E7360" Foreground="#FF7D735F"/>
+                <Button Content="Assign order" Height="72" HorizontalAlignment="Left" Margin="233,483,0,0" Name="btnAssignOrder" VerticalAlignment="Top" Width="247" Click="btnAssignOrder_Click" Background="#FF160E0E" BorderBrush="#FF7E7360" Foreground="#FF7D735F"/>
+                <TextBlock FontSize="30" Height="48" HorizontalAlignment="Left" Margin="6,556,0,0" Name="tbNowDrawing" Text="Now Drawing: " VerticalAlignment="Top" Width="238" Foreground="#FF0E0000" FontWeight="Bold" />
+                <TextBlock FontSize="30" Height="40" HorizontalAlignment="Left" Margin="211,556,0,0" Name="tbNowDrawingPlayer" Text="Assign order first!" VerticalAlignment="Top" Width="263" TextAlignment="Right" Foreground="#FF0E0000" FontWeight="Normal" FontStyle="Normal" FontStretch="Normal" />
+                <Button Content="Ready!" Height="72" HorizontalAlignment="Left" Margin="93,606,0,0" Name="btnReady" VerticalAlignment="Top" Width="296" Click="btnReady_Click" Visibility="Visible" Background="#FF160E0E" BorderBrush="#FF7E7360" Foreground="#FF7D735F"/>
+                <TextBlock FontSize="32" Height="47" HorizontalAlignment="Left" Margin="88,693,0,0" Name="tbTimeLeft" Text="" TextAlignment="Center" VerticalAlignment="Top" Visibility="Visible" Width="314" Foreground="#FF7F7460" FontWeight="Bold" />
+                <TextBlock FontSize="32" Height="43" HorizontalAlignment="Left" Margin="82,693,0,0" Name="tbTimeLeft2" Text="" TextAlignment="Center" VerticalAlignment="Top" Visibility="Visible" Width="325" Foreground="#FF7F7460" FontWeight="Bold" />
+                <TextBlock FontSize="45" Height="64" HorizontalAlignment="Left" Margin="12,610,0,0" Name="tbWhatToDraw" Text="" TextAlignment="Center" VerticalAlignment="Top" Visibility="Collapsed" Width="468" Foreground="#FF0E0000" FontWeight="Bold"/>
+                <Grid.Background>
+                    <ImageBrush ImageSource="/Charades;component/Images/charadesSignUp.jpg" Opacity="0.5" Stretch="UniformToFill" />
+                </Grid.Background>
+            </Grid>
+        </StackPanel>
+    </Grid>
+    <Page.BottomAppBar>
+        <AppBar x:Name="bottombar" Padding="10,0,10,0">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                <Button x:Name="backButton" Margin="10,23,10,0" Command="{Binding NavigationHelper.GoBackCommand, ElementName=pageRoot}"
+                        Style="{StaticResource NavigationBackButtonNormalStyle}"
+                        VerticalAlignment="Top"
+                        AutomationProperties.Name="Back"
+                        AutomationProperties.AutomationId="BackButton"
+                        AutomationProperties.ItemType="Navigation Button" Click="backButton_Click"/>
+            </StackPanel>
+        </AppBar>
+    </Page.BottomAppBar>
+
+</Page>

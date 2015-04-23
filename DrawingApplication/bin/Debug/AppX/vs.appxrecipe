@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>TOSHIBA_DAN</Machine>
+    <WindowsUser>Dan</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>371c012a-c4eb-4010-bf78-35d926746c6d</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\obj\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>C2174340D1265F1DD8E909000E0E7DC008B44B5F21BA5E7EB843C7D5C328CCD6</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>371c012a-c4eb-4010-bf78-35d926746c6d_1.0.0.0_neutral__m2mhzkw71ghyc</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>371c012a-c4eb-4010-bf78-35d926746c6d_m2mhzkw71ghyc!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>371c012a-c4eb-4010-bf78-35d926746c6d</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Dan</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-04-23T05:45:56.381</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\bin\Debug\DrawingApplication.exe">
+      <PackagePath>DrawingApplication.exe</PackagePath>
+      <Modified>2015-04-23T05:45:52.213</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T06:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T06:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T06:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T06:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2015-04-22T10:39:13.235</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\bin\Debug\BasicPage1.xbf">
+      <PackagePath>BasicPage1.xbf</PackagePath>
+      <Modified>2015-04-23T03:10:01.869</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\bin\Debug\Drawing.xbf">
+      <PackagePath>Drawing.xbf</PackagePath>
+      <Modified>2015-04-23T05:45:50.620</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\bin\Debug\FreeDraw.xbf">
+      <PackagePath>FreeDraw.xbf</PackagePath>
+      <Modified>2015-04-23T05:45:50.623</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\bin\Debug\GamePage.xbf">
+      <PackagePath>GamePage.xbf</PackagePath>
+      <Modified>2015-04-23T05:45:50.626</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2015-04-23T05:45:50.628</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\bin\Debug\SignUp.xbf">
+      <PackagePath>SignUp.xbf</PackagePath>
+      <Modified>2015-04-23T05:45:50.629</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\bin\Debug\DrawingApplication.xr.xml">
+      <PackagePath>DrawingApplication.xr.xml</PackagePath>
+      <Modified>2015-04-23T05:45:50.380</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\DrawingApplication\DrawingApplication\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-04-23T05:45:54.893</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
