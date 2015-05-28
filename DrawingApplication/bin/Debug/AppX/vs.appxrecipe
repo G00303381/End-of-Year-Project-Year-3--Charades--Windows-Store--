@@ -26,7 +26,7 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Dan\Desktop\Charades %28Windows Store%29\DrawingApplication\bin\Debug\DrawingApplication.exe">
       <PackagePath>DrawingApplication.exe</PackagePath>
-      <Modified>2015-04-23T08:15:39.652</Modified>
+      <Modified>2015-04-23T09:09:48.736</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dan\Desktop\Charades %28Windows Store%29\DrawingApplication\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
@@ -54,11 +54,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dan\Desktop\Charades %28Windows Store%29\DrawingApplication\bin\Debug\Drawing.xbf">
       <PackagePath>Drawing.xbf</PackagePath>
-      <Modified>2015-04-23T08:05:24.411</Modified>
+      <Modified>2015-04-23T09:09:47.135</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dan\Desktop\Charades %28Windows Store%29\DrawingApplication\bin\Debug\FreeDraw.xbf">
       <PackagePath>FreeDraw.xbf</PackagePath>
-      <Modified>2015-04-23T08:15:38.307</Modified>
+      <Modified>2015-04-23T09:09:47.136</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dan\Desktop\Charades %28Windows Store%29\DrawingApplication\bin\Debug\GamePage.xbf">
       <PackagePath>GamePage.xbf</PackagePath>

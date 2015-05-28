@@ -47,6 +47,10 @@ namespace DrawingApplication
             Frame.Navigate(typeof(FreeDraw));
         }
 
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Leaderboard));
+        }
        
     }
 }

@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Microsoft.WindowsAzure.MobileServices;
 
 // The Blank Application template is documented at http://go.microsoft.com/fwlink/?LinkId=234227
 
@@ -24,12 +25,24 @@ namespace DrawingApplication
     /// </summary>
     sealed partial class App : Application
     {
+        // http://go.microsoft.com/fwlink/?LinkId=290986&clcid=0x409
 
+       // TODO: Replace 'port' with the actual port number.
+        const string serviceUrl = "http://leaderboard-charades.azure-mobile.net/";
+        const string appkey = "LzYUOUqWSApRZPdwmZMkfZkqugHhkE34";
 
+        public static MobileServiceClient MobileService = new MobileServiceClient(serviceUrl, appkey);
+        
+        //Connection for LocalStorage
+        //const string serviceUrl = "http://localhost:63321/";
+        //public static MobileServiceClient MobileService = new MobileServiceClient(serviceUrl);
+      
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
         /// </summary>
+        /// 
+
         public App()
         {
        

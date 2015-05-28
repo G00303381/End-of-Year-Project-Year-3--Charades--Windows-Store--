@@ -1,0 +1,157 @@
+﻿<Page
+    x:Class="DrawingApplication.Leaderboard"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DrawingApplication"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    
+    <Page.Resources>
+        <x:String x:Key="AppName">Leaderboard</x:String>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="Margin" Value="2"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Foreground" Value="#FF13000E"/>
+        </Style>
+        <Style TargetType="Border">
+            <Setter Property="BorderThickness" Value="3"/>
+            <Setter Property="BorderBrush" Value="#FF13000E"/>
+            <Setter Property="Margin" Value="10"/>
+        </Style>
+        <Style TargetType="ListBoxItem">
+            <Setter Property="FontSize" Value="28"/>
+            <Setter Property="Foreground" Value="#FF0E0000"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="Margin" Value="0,10,0,10"/>
+            <Setter Property="BorderBrush" Value="#FF13000E"/>
+        </Style>
+        <Style TargetType="StackPanel" x:Name="PanelStyle1">
+            <Setter Property="Margin" Value="10,5,5,5"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="ListItemTextStyle">
+            <Setter Property="FontSize" Value="28"/>
+            <Setter Property="Foreground" Value="#FF0E0000"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="TextBlock" BasedOn="{StaticResource ListItemTextStyle}" x:Key="PlayerRankTextStyle">
+            <Setter Property="Foreground" Value="#FF13000E"/>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="ListItemHeaderStyle">
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="Foreground" Value="#FF13000E"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="FontWeight" Value="SemiBold" />
+        </Style>
+    </Page.Resources>
+    
+    <Page.BottomAppBar>
+        <AppBar x:Name="bottombar" Padding="10,0,10,0">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                <Button x:ConnectionId='1' x:Name="backButton" Margin="10,23,10,0" Command="{Binding NavigationHelper.GoBackCommand, ElementName=pageRoot}"
+                        Style="{StaticResource NavigationBackButtonNormalStyle}"
+                        VerticalAlignment="Top"
+                        AutomationProperties.Name="Back"
+                        AutomationProperties.AutomationId="BackButton"
+                        AutomationProperties.ItemType="Navigation Button"                         />
+            </StackPanel>
+        </AppBar>
+    </Page.BottomAppBar>
+
+<Grid Background="Wheat">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Column="1" Text="{StaticResource AppName}" Style="{StaticResource HeaderTextBlockStyle}"
+                   Foreground="#FF13000E" VerticalAlignment="Bottom" Margin="0,0,30,40" />
+
+        <Border Background="Wheat" Grid.Row="1" Grid.Column="1">
+            <StackPanel Style="{StaticResource PanelStyle1}" Orientation="Horizontal">
+                <StackPanel Style="{StaticResource PanelStyle1}" >
+                    <TextBlock Text="Players"/>
+                    <ListBox Width="200" Height="400" x:Name="PlayerListBox" ItemsSource="{Binding Players}" 
+                             DisplayMemberPath="Name"/>
+                </StackPanel>
+                <StackPanel Style="{StaticResource PanelStyle1}" >
+                    <TextBlock Text="Score"/>
+                    <TextBox x:Name="PlayerScoreTextBox" Width="100" HorizontalAlignment="Left" InputScope="Number" Text="100"/>
+                    <Button x:ConnectionId='3' Content="Submit" Foreground="#FF13000E" Background="#FF74685E" x:Name="SubmitScoreButton"                                 />
+                </StackPanel>
+                <StackPanel Style="{StaticResource PanelStyle1}">
+                    <ProgressRing x:Name="ProgressRing1" Width="60" Height="60" IsActive="{Binding IsPending}"/>
+                    <TextBlock Text="{Binding ErrorMessage}" FontSize="18" Foreground="Red"/>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+
+        <Border Grid.Row="2"  Grid.Column="1" Background="Wheat">
+            <StackPanel Style="{StaticResource PanelStyle1}">
+                <TextBlock Text="Add Player"/>
+                <TextBox x:Name="AddPlayerTextBox" Width="400" HorizontalAlignment="Left"/>
+                <Button x:ConnectionId='2' Content="Submit" Background="#FF74685E" Foreground="#FF13000E" x:Name="AddPlayerButton"                              />
+            </StackPanel>
+        </Border>
+
+        <Border Grid.Row="1" Grid.Column="2" Grid.RowSpan="2" Background="Wheat">
+            <StackPanel Style="{StaticResource PanelStyle1}" Width="400">
+                <ListView x:Name="RankingsListView" ItemsSource="{Binding Ranks}" SelectionMode="None">
+                    <ListView.ItemContainerStyle>
+                        <Style TargetType="ListViewItem">
+                            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+                        </Style>
+                    </ListView.ItemContainerStyle>
+
+                    <ListView.Header>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="2*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="Rank" Style="{StaticResource ListItemHeaderStyle}"/>
+                            <TextBlock Grid.Column="1" Text="Player" Style="{StaticResource ListItemHeaderStyle}"/>
+                            <TextBlock Grid.Column="2" Text="Score" Style="{StaticResource ListItemHeaderStyle}"/>
+
+                        </Grid>
+                    </ListView.Header>
+
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="2*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Text="{Binding Path=Rank}" Style="{StaticResource PlayerRankTextStyle}"/>
+                                <TextBlock Text="{Binding Path=PlayerName}" Grid.Column="1" Style="{StaticResource ListItemTextStyle}"/>
+                                <TextBlock Text="{Binding Path=Score}" Grid.Column="2" Style="{StaticResource ListItemTextStyle}" TextAlignment="Right"/>
+                            </Grid>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <Button Content="Refresh" Foreground="#FF13000E" Background="#FF74685E" x:Name="RefreshRankings"/>
+            </StackPanel>
+        
+        
+        </Border>
+        
+        
+    </Grid>
+
+</Page>
+

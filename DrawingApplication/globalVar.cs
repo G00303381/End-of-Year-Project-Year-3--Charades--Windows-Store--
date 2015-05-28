@@ -37,6 +37,7 @@ namespace DrawingApplication
         {
             "Sun",
             "Knife",
+            "Take A Shit",
             "Half",
             "Cardboard",
             "Baby-sitter",

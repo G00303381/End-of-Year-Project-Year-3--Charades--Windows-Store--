@@ -37,11 +37,11 @@ namespace DrawingApplication
         Color penColor = Colors.Black;
         Color solidColor = Colors.White;
 
-        public uint pendId;
+        public uint pendId; //32 bit integer
         public int touchId;
 
-        Point prevDrawPoint;
-        Point currentDrawPoint;
+        Point prevDrawPoint;    //touch intital point
+        Point currentDrawPoint; //where the point is now
 
         Ellipse newCircle;
         Rectangle newRect;
@@ -49,7 +49,7 @@ namespace DrawingApplication
 
         private double x1, y1, x2, y2;
 
-        string drawMode;
+        string drawMode;    //used to handle switch drawmode
 
         int timeLeft = 120;
 
@@ -62,7 +62,7 @@ namespace DrawingApplication
             CanvasMain.PointerReleased += new PointerEventHandler(OnCanvasReleased);
             CanvasMain.PointerExited += new PointerEventHandler(OnCanvasReleased);
 
-
+            //code that populates the combo box colours
             var colours = typeof(Colors).GetTypeInfo().DeclaredProperties;
 
             foreach (var item in colours)
@@ -83,6 +83,7 @@ namespace DrawingApplication
                 inkManager.ProcessPointerUp(point);
             }
 
+            //reset values on release from canvas
             pendId = 0;
             touchId = 0;
             newLine = null;
@@ -100,9 +101,11 @@ namespace DrawingApplication
                 case "pen":
                     {
                         if (e.Pointer.PointerId == pendId)
-                        {
+                        {   
+                            //get the intital point of contact on the canvas
                             PointerPoint point = e.GetCurrentPoint(CanvasMain);
 
+                            //set the draw point holder to the point position
                             currentDrawPoint = point.Position;
                             x1 = prevDrawPoint.X;
                             y1 = prevDrawPoint.Y;
@@ -162,6 +165,9 @@ namespace DrawingApplication
                             x2 = e.GetCurrentPoint(CanvasMain).Position.X;
                             y2 = e.GetCurrentPoint(CanvasMain).Position.Y;
 
+                            //Thickness for the left, top, right and bottom of the rectangle
+                            //Check positon direction of the mouse
+                            //Then draw rectangle
                             if ((x2 - x1) > 0 && (y2 - y1) > 0)
                                 newRect.Margin = new Thickness(x1, y1, x2, y2);
                             else if ((x2 - x1) < 0)
@@ -190,6 +196,9 @@ namespace DrawingApplication
                             x2 = e.GetCurrentPoint(CanvasMain).Position.X;
                             y2 = e.GetCurrentPoint(CanvasMain).Position.Y;
 
+                            //Thickness for the left, top, right and bottom of the ellipse
+                            //Check position of mouse
+                            //Draw ellipse in correspondent to the next draw point
                             if ((x2 - x1) > 0 && (y2 - y1) > 0)
                                 newCircle.Margin = new Thickness(x1, y1, x2, y2);
                             else if ((x2 - x1) < 0)
@@ -211,6 +220,7 @@ namespace DrawingApplication
 
         }
 
+        //Method to get the draw distance of the line
         private double Distance(double x1, double y1, double x2, double y2)
         {
             double d = 0;

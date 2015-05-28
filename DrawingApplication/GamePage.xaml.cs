@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.WindowsAzure.MobileServices;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -13,6 +14,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Newtonsoft.Json;
+using System.Threading.Tasks;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -23,7 +26,6 @@ namespace DrawingApplication
     /// </summary>
     public sealed partial class GamePage : Page
     {
-       
         DispatcherTimer myDispatcherTimer = new DispatcherTimer();
 
         Random random = new Random();
@@ -37,6 +39,7 @@ namespace DrawingApplication
             myDispatcherTimer.Interval = new TimeSpan(0, 0, 0, 1, 0);
             myDispatcherTimer.Tick += Each_Tick;         
         }
+
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {           
@@ -62,8 +65,10 @@ namespace DrawingApplication
             //playersListOrdered.RemoveAt(0);
         }
 
+
         private void btnReady_Click(object sender, RoutedEventArgs e)
         {
+          
             if (isButtonsVisible == true)
             {
                 var error = new MessageDialog("Please select who guessed the word.");

@@ -20,7 +20,7 @@
     </Page.Resources>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Canvas Name="CanvasMain" Background="White" Margin="0,0,0,0" >
+        <Canvas Name="CanvasMain" Background="Wheat" Margin="0,0,0,0" >
             <!--<TextBlock Height="68" Margin="625,22,539,678" Name="textBlock1" Text="Time Left: 120" FontSize="24" Width="202" Foreground="Black" FontWeight="Bold" />-->
         </Canvas>
     </Grid>
@@ -35,11 +35,11 @@
                         AutomationProperties.AutomationId="BackButton"
                         AutomationProperties.ItemType="Navigation Button" Click="backButton_Click"/>
 
-                <Button x:Name="penbtn" Content="&#x270E;" Style="{StaticResource CanvasMode}" ToolTipService.ToolTip="Pen" Click="penbtn_Click" />
-                <Button x:Name="linebtn" Content="&#x2571;" Style="{StaticResource CanvasMode}" ToolTipService.ToolTip="Line" Click="linebtn_Click" />
-                <Button x:Name="circlebtn" Content="&#x25EF;" Style="{StaticResource CanvasMode}" ToolTipService.ToolTip="Circle" Click="circlebtn_Click" />
-                <Button x:Name="rectbtn" Content="&#x25AD;" Style="{StaticResource CanvasMode}" ToolTipService.ToolTip="Rectangle" Click="rectbtn_Click" />
-                <Button x:Name="erasebtn" Content="&#x2205;" Style="{StaticResource CanvasMode}" ToolTipService.ToolTip="Eraser" Click="erasebtn_Click" />
+                <Button x:Name="penbtn" Content="Pen" Style="{StaticResource CanvasMode}" ToolTipService.ToolTip="Pen" Click="penbtn_Click" />
+                <Button x:Name="linebtn" Content="Line" Style="{StaticResource CanvasMode}" ToolTipService.ToolTip="Line" Click="linebtn_Click" />
+                <Button x:Name="circlebtn" Content="Circle" Style="{StaticResource CanvasMode}" ToolTipService.ToolTip="Circle" Click="circlebtn_Click" />
+                <Button x:Name="rectbtn" Content="Rectangle" Style="{StaticResource CanvasMode}" ToolTipService.ToolTip="Rectangle" Click="rectbtn_Click" />
+                <Button x:Name="erasebtn" Content="Erase" Style="{StaticResource CanvasMode}" ToolTipService.ToolTip="Eraser" Click="erasebtn_Click" />
                 <TextBlock x:Name="tbPenColours" Text="Pen Colours : " FontSize="15" VerticalAlignment="Center" TextWrapping="Wrap" Padding="13,0,0,0" Margin="10,23,10,23" Grid.Column="3"></TextBlock>
                 <ComboBox x:Name="cbChangeColour" Width="200" Height="40" ItemsSource="{Binding Colours}" SelectedItem="{Binding SelectedColourName, Mode=TwoWay}" Padding="8,0" Margin="0,23" Grid.Column="4" SelectionChanged="cbChangeColour_SelectionChanged">
                     <ComboBox.ItemTemplate>

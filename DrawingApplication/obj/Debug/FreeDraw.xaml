@@ -35,11 +35,11 @@
                         AutomationProperties.AutomationId="BackButton"
                         AutomationProperties.ItemType="Navigation Button"                         />
 
-                <Button x:ConnectionId='2' x:Name="penbtn" Content="&#x270E;" Style="{StaticResource CanvasMode}" ToolTipService.ToolTip="Pen"                      />
-                <Button x:ConnectionId='3' x:Name="linebtn" Content="&#x2571;" Style="{StaticResource CanvasMode}" ToolTipService.ToolTip="Line"                       />
-                <Button x:ConnectionId='4' x:Name="circlebtn" Content="&#x25EF;" Style="{StaticResource CanvasMode}" ToolTipService.ToolTip="Circle"                         />
-                <Button x:ConnectionId='5' x:Name="rectbtn" Content="&#x25AD;" Style="{StaticResource CanvasMode}" ToolTipService.ToolTip="Rectangle"                       />
-                <Button x:ConnectionId='6' x:Name="erasebtn" Content="&#x2205;" Style="{StaticResource CanvasMode}" ToolTipService.ToolTip="Eraser"                        />
+                <Button x:ConnectionId='2' x:Name="penbtn" Content="Pen" Style="{StaticResource CanvasMode}" ToolTipService.ToolTip="Pen"                      />
+                <Button x:ConnectionId='3' x:Name="linebtn" Content="Line" Style="{StaticResource CanvasMode}" ToolTipService.ToolTip="Line"                       />
+                <Button x:ConnectionId='4' x:Name="circlebtn" Content="Circle" Style="{StaticResource CanvasMode}" ToolTipService.ToolTip="Circle"                         />
+                <Button x:ConnectionId='5' x:Name="rectbtn" Content="Rectangle" Style="{StaticResource CanvasMode}" ToolTipService.ToolTip="Rectangle"                       />
+                <Button x:ConnectionId='6' x:Name="erasebtn" Content="Circle" Style="{StaticResource CanvasMode}" ToolTipService.ToolTip="Eraser"                        />
                 <TextBlock x:Name="tbPenColours" Text="Pen Colours : " FontSize="15" VerticalAlignment="Center" TextWrapping="Wrap" Padding="13,0,0,0" Margin="10,23,10,23" Grid.Column="3"></TextBlock>
                 <ComboBox x:ConnectionId='7' x:Name="cbChangeColour" Width="200" Height="40" ItemsSource="{Binding Colours}" SelectedItem="{Binding SelectedColourName, Mode=TwoWay}" Padding="8,0" Margin="0,23" Grid.Column="4"                                                   >
                     <ComboBox.ItemTemplate>
